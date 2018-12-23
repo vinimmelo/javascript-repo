@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    function pulaLinha() {
+      document.write("</br>");
+    }
+
+    function mostra(mensagem) {
+      document.write("<big><strong>" + mensagem + "</strong></big>");
+      pulaLinha();
+    }
+    var ano_atual = 2018;
+    var desde_descobrimento = ano_atual - 1500;
+    var geracoes = desde_descobrimento / 28;
+    mostra("Desde o descobrimento do Brasil.");
+    mostra("Existiram " + geracoes + " gerações!!!");
+
+</script>
