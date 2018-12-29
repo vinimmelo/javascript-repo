@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    function pulaLinha() {
+      document.write("</br>");
+    }
+
+    function mostra(mensagem) {
+      document.write("<big><strong>" + mensagem + "</strong></big>");
+      pulaLinha();
+    }
+
+    function sorteia(n) {
+      return Math.round(Math.random() * n);
+    }
+
+    var numeroPensado = sorteia(100);
+    var chute = parseInt(prompt("Já pensei. Qual você acha que é? "));
+
+    if (numeroPensado == chute) {
+      mostra("Uau, você acertou, pois eu pensei no: " + numeroPensado);
+    } else {
+      mostra("Você errou, eu tinha pensado no: " + numeroPensado);
+    }
+
+    if (numeroPensado > chute) {
+      mostra("O número pensado é maior.");
+    } else {
+      mostra("O número pensado é menor.");
+    }
+
+</script>

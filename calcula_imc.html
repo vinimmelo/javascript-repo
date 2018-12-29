@@ -14,16 +14,21 @@
       var imc = peso / (altura * altura);
       return imc;
     }
-    var pesoFlavio = 73;
-    var alturaFlavio = 1.71;
-    var imcFlavio = calculaImc(pesoFlavio, alturaFlavio);
 
-    var pesoVinicius = 87;
-    var alturaVinicius = 1.81;
-    var imcVinicius = calculaImc(pesoVinicius, alturaVinicius);
+    var nome = prompt("Informe o seu nome: ");
+    var peso= prompt("Informe o seu peso: ");
+    var altura = prompt("Informe a sua altura: ");
+    var imc = calculaImc(peso, altura);
 
-    mostra('O imc do Flávio é de: ' + imcFlavio);
-    mostra('O imc do Vinícius é de: ' + imcVinicius);
+    mostra("O imc do " + nome + " é de: " + imc);
+    //mostra('O imc do Vinícius é de: ' + imcVinicius);
 
+    if (imc < 18.5) {
+      mostra("Você está abaixo do recomendado.");
+    } else if (imc >= 18.5 && imc <= 35) {
+      mostra("Seu imc está excelente.");
+    }else {
+      mostra("Você está acima do recomendado.");
+    }
 
 </script>
