@@ -38,4 +38,17 @@
     color: #3C1D3D;
     text-shadow: 1px 1px #000;
     margin-right: .2ch;
+    line-height: 1;
+}
+
+.citacao-bio::before {
+  position: absolute;
+  content: '“';
+  font-size: 10em;
+  color: #bbb;
+  line-height: 0.8;
+}
+
+.citacao-bio > p {
+  position: relative;
 }

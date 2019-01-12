@@ -153,3 +153,19 @@ main {
     right: 0;
     height: 300px;
 }
+
+.icones-redes-sociais a {
+  position: relative;
+}
+
+.icones-redes-sociais a:hover::before,
+.icones-redes-sociais a:focus::before {
+  content: attr(data-legenda);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  text-indent: 0;
+  width: 300%;
+  background: black;
+  font-size: .75em;
+}
