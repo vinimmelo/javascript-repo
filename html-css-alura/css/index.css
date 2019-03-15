@@ -105,7 +105,7 @@ footer a {
 main {
     width: 100%;
     padding-bottom: 0;
-    float: none;
+    flex-grown: 1;
 }
 html,body {
     overflow-x: hidden;
@@ -308,4 +308,8 @@ body {
     to {
         top: 5px;
     }
+}
+
+body {
+    display: block;
 }
