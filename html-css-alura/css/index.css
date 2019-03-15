@@ -132,7 +132,10 @@ body {
     font-size: 400%;
     color: rgba(255, 127, 127, .5);
     position: absolute;
+    animation: aparece 2.5s;
+    -webkit-animation: aparece 2s;
 }
+
 .eficiencia {
     top: 50%;
     left: 60%;
@@ -241,6 +244,10 @@ body {
 
     font-size: 1.2em;
     font-family: "Open Sans Condensed", sans-serif;
+    animation: aparece 0.5s;
+    -webkit-animation: aparece 0.5;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
 }
 .blog .inicio-post {
     position: absolute;
@@ -271,6 +278,34 @@ body {
 }
 
 .botao-index {
-    transition: .5s;
+    transition: transform 1s, box-shador 1s;
     text-decoration: none;
+    transition-delay: 0s, 1s;  
+}
+
+@keyframes aparece {
+    0% {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+
+.saudacao em {
+    animation: flutua 1s infinite;
+    position: relative;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.saudacao:hover em {
+    animation-play-state: paused;
+}
+
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
 }
