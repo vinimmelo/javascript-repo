@@ -1,0 +1,22 @@
+{
+  "name": "javascript-repo",
+  "version": "1.0.0",
+  "description": "Javascript Projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinimmelo/javascript-repo.git"
+  },
+  "author": "Vinícius Melo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinimmelo/javascript-repo/issues"
+  },
+  "homepage": "https://github.com/vinimmelo/javascript-repo#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}
