@@ -8,11 +8,21 @@ botaoAdicionar.addEventListener("click", function(event) {
 
   var pacienteTr = montaTr(paciente);
 
+  var erros = validaPaciente(paciente);
+
+  if (erros.length > 0) {
+    exibeMensagensDeErro(erros);
+    return;
+  }
+
   var tabela = document.querySelector("#tabela-pacientes");
 
   tabela.appendChild(pacienteTr);
 
   form.reset();
+
+  var mensagensErro = document.querySelector("#mensagens-erro");
+  mensagensErro.innerHTML = "";
 });
 
 function obtemPacienteDoFormulario(form) {
@@ -47,4 +57,15 @@ function montaTd(dado, classe) {
   td.textContent = dado;
 
   return td;
+}
+
+function exibeMensagensDeErro(erros) {
+  var ul = document.querySelector("#mensagens-erro");
+  ul.innerHTML = "";
+
+  erros.forEach(function(erro) {
+    var li = document.createElement("li");
+    li.textContent = erro;
+    ul.appendChild(li);
+  });
 }
