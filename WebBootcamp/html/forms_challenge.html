@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Register Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+    </head>
+    <body>
+        <h1>Register</h1></br>
+        <form action="">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" value="" />
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" value="" />
+        </br>
+        <label>
+            Male
+            <input type="radio" name="gender" value="Male" />
+        </label>
+        <label>
+            Female
+            <input type="radio" name="gender" value="Female" />
+        </label>
+        <label>
+            Other
+            <input type="radio" name="gender" value="Other" />
+        </label>
+        </br>
+        <label>
+            Email
+            <input type="email" name="email" placeholder="type your e-mail" required />
+        </label>
+        <label>
+            <input type="password" name="password" placeholder="type your password" minlength="5" maxlength="10" required />
+        </label>
+        </br>
+        <label>
+            Birthday
+            <input type="date" name="bdayMonth" />
+        </label>
+        </br>
+        <label for="terms">I agree to the terms and condition: </label>
+        <input type="checkbox" name="terms" id="terms" />
+        </br>
+        <input type="submit" name="submit" value="Submit" />
+        </form>
+
+    </body>
+</html>
