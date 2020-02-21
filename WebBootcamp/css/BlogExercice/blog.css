@@ -1,0 +1,11 @@
+/* border color: #bdc3c7 */
+/* date color: 3498db */
+/* h2 color #2c3e50              */
+/* source sans pro  */
+
+
+body {
+    border: 25px solid #bdc3c7;
+    margin-left: 20%;
+    margin-right: 20%;
+}
